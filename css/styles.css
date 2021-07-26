@@ -1,0 +1,179 @@
+/*Font import karla*/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap');
+
+/*Variables*/
+
+:root{
+
+    /*Primary colors*/
+    --color-primary: #2ab2af;
+    --color-primary-light: #3dc7bb;
+    --color-secondary: #c0df34;
+    --color-secondary-dark: #aecc2a;
+    
+    /*Neutral colors*/
+    --color-light-gray: hsl(204, 43%, 93%);
+    --color-grayish-blue: hsl(218, 22%, 67%);
+}
+
+/*Reusable classes*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.1rem;
+    background-color: #ECF4F3;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Wrapper Styles */
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 1px 15px #ccc;
+    background-color: white;
+    border-radius: 5px;
+    animation: fadeInDown 1s ease-in;
+}
+
+
+
+/* Entrace Animation */
+
+@keyframes fadeInDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* Header Styles */
+
+.header{
+    padding: 2rem;
+}
+
+.header h3{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.header p{
+    color: var(--color-grayish-blue);
+}
+
+.header h3 + p{
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* Sign Up Styles */
+
+.sign-up{
+    padding: 2rem;
+    background-color: var(--color-primary);
+}
+
+.sign-up h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sign-up p{
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.sign-up p span{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* Sign up btn */
+
+.sign-btn{
+    margin-top: 30px;
+    display: block;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0px 3px 25px #219c9c;
+    transition: background .3s ease-in-out;
+}
+
+.sign-btn:hover{
+    background-color: var(--color-secondary-dark);
+    transition: background .3s ease-in-out;
+}
+
+
+/* About us styles */
+
+.about-us{
+    background-color: var(--color-primary-light);
+    padding: 2rem;
+}
+
+.about-us h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-us p{
+    color: white;
+    font-weight: 400;
+}
+
+footer{
+    margin-top: 50px;
+    animation: fadeInDown 1s ease-in;
+    animation-delay: 100ms;
+}
+
+footer p{
+    font-size: 1rem;
+    color: var(--color-grayish-blue);
+}
+
+footer p a{
+    color: var(--color-primary);
+}
+
+@media (min-width: 900px) {
+
+    .wrapper{
+        width: 40%;
+    }
+
+    .inner-grid{
+        display: flex;;
+    }
+
+    .inner-grid div{
+        width: 50%;
+    }
+}
