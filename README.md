@@ -10,7 +10,10 @@
 ## Objetivo
 Atuar como desenvolvedor front end, recebendo um design e passando para código. Não sendo responsável pelo design.
 
+[**Link para a tela online**](https://card-de-assinatura.netlify.app/)
+
 ### Imagens do prjeto
 
 ![](https://github.com/felipelink07/card-de-assinatura/blob/main/design/desktop-design.jpg)
+
 
